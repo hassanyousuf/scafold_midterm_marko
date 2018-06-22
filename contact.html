@@ -9,8 +9,8 @@
 <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-
-    <div id="container">
+<main id="siteContainer"
+    <div id="headerNav">
       <header id="mainHeader">
         <nav id="navCon">
           <h2 class="hidden">Main Navigation</h2>
@@ -44,18 +44,52 @@
 <section id="promoInfo2">
 <h1>Send Us Your Design Idea! All Quotes Are Free With No Obligation</h1>
 <p>You want a design in memory of a lost friend? A design for a  a special occaion?
-   Do  you love henna but want to try something new? Send us an Image of your
+   Do  you love henna, but want to try something new? Send us an Image of your
    design ideas and we will make it a reality! </p>
     </section>
 
   </section>
-</section>
+
     <!-- headerPro close -->
+
+
+    <section id="contact-left">
+                <form method="post">
+                        <input type="text" name="First Name" placeholder="First Name" required>
+                        <input type="text" name="Last Name" placeholder="Last Name" required>
+                        <input type="email" name="Your Email" placeholder="Email" required>
+                    </form>
+
+                    <form method="post">
+                      <textarea name="Message" placeholder="Message" required></textarea>
+                      <input type="submit" value="Submit">
+                    </form>
+
+            </section>
+
+              <section id="genRadio">
+              <form>
+                <h1>Gender</h1>
+            <input type="radio" name="gender" value="male" unchecked>male
+            <input type="radio" name="gender" value="female" unchecked>female
+              </form>
+            </section>
+            <section id="timeRadio1">
+
+                <form>
+                  <h1>First time?</h1>
+              <input type="radio" name="time" value="yes" unchecked>male
+              <input type="radio" name="time" value="no" unchecked>female
+                </form>
+              </section>
+
+
+</main>
 <!--
       <img src="images/about_header.png" alt="about header"> -->
       <!-- header images for other pages -->
 
 
   <script src="js/main.js"></script>
-  </body>
+</body>
 </html>

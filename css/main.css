@@ -20,6 +20,12 @@ p
 {
 	line-height:20px;
 	font-style: 'Raleway', sans-serif;
+width: 700px;
+ margin-left: 130px;
+ 	padding-bottom: 30px;
+	color: white;
+
+ /* all adjustments for anything with a "p" is adjusted here and it will be effected everywhere else. */
 	/* didnt have before */
 }
 
@@ -151,31 +157,49 @@ position: relative;
 
 /* end of home page */
 
-#promoInfo
+
+
+#promoSec
+{
+border: 5px solid white;
+}
+
+#promoInfo1, #promoinfo2
 	{
 border: 10px;
-color: white;
+
 	}
 
-#promoInfo h1, h2
+#promoInfo1 h1
 {
 	font-size: 34px;
 font-style:'Shadows Into Light',arial, san-sarif;
 color:#333;
 line-height: 44px;
-margin-bottom: 40px;
+margin-bottom: 20px;
+margin-top:30px;
+ text-align: center;
 }
  /* there is an issue with the first tyle not being effected */
 
+ #promoInfo2 h1
+ {
+ 	font-size: 34px;
+ font-style:'Shadows Into Light',arial, san-sarif;
+ color:#333;
+ line-height: 44px;
+ margin-bottom: 20px;
+ margin-top:30px;
+ text-align: center;
+ }
 
-#promoinfo p
+
+#promoinfo1 p
 {
 	font-size: 16px;
 	font-style: 'Raleway', sans-serif;
+	/* is not changing to raleway for some reason. */
 }
-
-
-
 
 
 
