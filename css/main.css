@@ -48,7 +48,7 @@ p
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #b4baba;
+	background-color:none;
 }
 
 li{
@@ -63,6 +63,17 @@ li a {
 	text-decoration: none;
 
 }
+
+
+#mainCon p
+{
+	background-color: white;
+	text-align: center;
+	border-radius: 0px 0px 45px 45px;
+	margin-bottom: 40px;
+}
+
+
 #mainNav
 {
 	float: right;
@@ -91,6 +102,25 @@ padding-left: 20px;
 padding-right: 20px;
 	background-color: #b4baba;
 }
+
+#container
+{
+	margin: 0 auto;
+	width: 960px;
+	padding-left: 20px;
+	padding-right: 20px;
+		background-color: #c1a29b;
+}
+
+.container
+{
+	margin: 0 auto;
+	width: 960px;
+	padding-left: 20px;
+	padding-right: 20px;
+		background-color: #b1a692;
+}
+
 
 /*
 mainHeader
@@ -122,6 +152,9 @@ headerPro p{
 	margin:auto;
 	padding-top:40px;
 	margin-top: 40px;
+	padding-top: 50px;
+	overflow: auto;
+	/* needed overflow to stay in the container */
 }
 
 
@@ -130,7 +163,7 @@ headerPro p{
 	float: left;
 margin-right: 30px;
 position: relative;
-
+border-radius: 45px 0px 0px 45px;
 
 }
 
@@ -139,6 +172,7 @@ position: relative;
 	float:left;
 	margin-left: 38px;
 position: relative;
+border-radius: 45px 0px 0px 45px;
 
 }
 	.simpleHen
@@ -146,6 +180,8 @@ position: relative;
 		float:left;
 	margin-right: 73px;
 	position: relative;
+	border-radius: 45px 0px 0px 45px;
+
 	}
 
 
@@ -158,6 +194,7 @@ position: relative;
 #promoSec
 {
 border: 5px solid white;
+background-color: #c1a29b;
 }
 
 #promoInfo1, #promoinfo2
@@ -236,6 +273,7 @@ margin-top:30px;
 {
 border: 5px solid white;
 padding-top: 20px;
+background-color: #c1a29b;
 }
 
 

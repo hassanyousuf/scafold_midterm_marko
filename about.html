@@ -3,43 +3,93 @@
   <head>
     <meta charset="utf-8">
     <title>about</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500%7CShadows+Into+Light" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
-    <div id="container">
-      <header id="mainHeader">
-        <nav id="navCon">
-          <h2 class="hidden">Main Navigation</h2>
-          <nav id="mainNav">
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="index.html">Home</a></li>
-            </ul>
-          </nav>
-        </nav>
-      </header>
+    <main id="siteContainer"
+        <div id="headerNav">
+          <header id="mainHeader">
+            <nav id="navCon">
+              <h2 class="hidden">Main Navigation</h2>
+              <nav id="mainNav">
+                <ul>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="index.html">Home</a></li>
+                </ul>
+              </nav>
+            </nav>
+          </header>
 
-      <section id="headerPro">
-        <h2 class="hidden">Header Promotions</h2>
+          <section id="headerPro">
+            <section id="headerImage"><img src="images/contact_header.png" alt="contact header"></section>
+        </section>
+
+
+    <section id="promoSec">
+    <section id="promoInfo1">
+      <!-- issue with h2 was becuase i didnt fully close section ealier -->
+    <h1>History: Halal-ink</h1>
+    <p>Halal-ink has been introduced to our muslim brothers and sister as a
+       “halal” was to leave a (temperary) mark on there skin for the special occasion.
+       We feel that muslims should have the chance to  have a tattoo that they think
+       looks nice. What we do is make sure it isn’t permanent. Just like conventional henna,
+       our Halal-ink is made with the same products but we use a fine point pen and
+       new techneques to give a more tattoo like appeal.</p>
+     </section>
+
+    <section id="promoInfo2">
+    <h1>Send Us Your Design Idea! All Quotes Are Free With No Obligation</h1>
+    <p>You want a design in memory of a lost friend? A design for a  a special occaion?
+       Do  you love henna, but want to try something new? Send us an Image of your
+       design ideas and we will make it a reality! </p>
+        </section>
+
       </section>
-        <section id="headerImage" height:300px;>
-        <h2 class="hidden">Header Image</h2>
-       <img src="images/about_header.png" alt="about page header">
-      <!--
 
-      <img src="images/about_header.png" alt="about header"> -->
-      <!-- header images for other pages -->
-      </section>
+        <!-- headerPro close -->
 
-      <section>
-        <h2 id="hoursOf"</h2>
-          <p>Monday 9:00-5:00 tuesday 9:00-5:00 Wednesday  9:00-5:00 Thrusday 9:00-5:00 Friday/Saturday CLOSED Sunday 9:00-5:00
-          </p>
-      </section>
 
-  <script src="js/main.js"></script>
-  </body>
-</html>
+        <section id="contact-left">
+                    <form method="post">
+                            <input type="text" name="First Name" placeholder="First Name" required>
+                            <input type="text" name="Last Name" placeholder="Last Name" required>
+                            <input type="email" name="Your Email" placeholder="Email" required>
+                        </form>
+
+                        <form method="post">
+                          <textarea name="Message" placeholder="Message" required></textarea>
+                          <input type="submit" value="Submit">
+                        </form>
+
+                </section>
+
+                  <section id="genRadio">
+                  <form>
+                    <h1>Gender</h1>
+                <input type="radio" name="gender" value="male" unchecked>male
+                <input type="radio" name="gender" value="female" unchecked>female
+                  </form>
+                </section>
+                <section id="timeRadio1">
+
+                    <form>
+                      <h1>First time?</h1>
+                  <input type="radio" name="time" value="yes" unchecked>male
+                  <input type="radio" name="time" value="no" unchecked>female
+                    </form>
+                  </section>
+
+
+    </main>
+    <!--
+          <img src="images/about_header.png" alt="about header"> -->
+          <!-- header images for other pages -->
+
+
+      <script src="js/main.js"></script>
+    </body>
+    </html>
