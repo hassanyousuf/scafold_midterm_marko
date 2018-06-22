@@ -157,14 +157,30 @@ headerPro p{
 	/* needed overflow to stay in the container */
 }
 
-
+/* overflow makes them work with border radius */
 .weddingOc
 {
 	float: left;
 margin-right: 30px;
-position: relative;
-border-radius: 45px 0px 0px 45px;
+border-radius: 5px;
+overflow: auto;
+height:80%%
+width:80%;
+/* this isnt working to ask someone how t round edges in class */
 
+}
+.weddingOc: hover
+{
+	background: #333;
+	border-radius: 40px;
+	overflow: auto;
+	transition:scale(1.3);
+	transition: all 0.2s ease-in-out;
+	height: 120%;
+	width:120%
+	transition-timing-function: 0.3s ease-in-out;
+	position: relative;
+	box-shadow:10px 10px 10px 5px grey;
 }
 
 .gallImg
@@ -172,19 +188,34 @@ border-radius: 45px 0px 0px 45px;
 	float:left;
 	margin-left: 38px;
 position: relative;
-border-radius: 45px 0px 0px 45px;
+border-radius: 5px;
+width:273px;
+overflow: auto;
 
+}
+
+
+.gallImg: hover
+{
+	background:#333;
+	border-radius: 40px;
+	overflow: auto;
+	transition: all 0.2s easse-in;
 }
 	.simpleHen
 	{
 		float:left;
 	margin-right: 73px;
 	position: relative;
-	border-radius: 45px 0px 0px 45px;
-
+	width:273px;
+	border-radius:5px;
+	overflow-x: auto;
 	}
 
+.simpleHen: hover
+{
 
+}
 	/* need to get back to these and fix them */
 
 /* end of home page */
