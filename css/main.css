@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* class "." id "#" */
+
+body
+{
+	font-family: Helvetica, Arial, Sans-serif, Serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 14px;
+	background-color: #f6c5c0;
+	overflow: auto;
+	/* use backgroud-color here to give everything a color. */
+	/* this is the colo of the outside */
+
+}
+
+p
+{
+	line-height:20px;
+	font-style: 'Raleway', sans-serif;
+	/* didnt have before */
+}
+
+
+
+.hidden
+{
+	display: none;
+}
+
+#container
+{
+	margin: 0 auto;
+	/* margin: 0 auto; makes it centered . . . 0px doesnt work */
+	width: 960px;
+	/* overflow:hidden; */
+	background-color: #c1a29b;
+	/* this is the color on the inside. or that might be the siteContainer */
+
+}
+ ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #b4baba;
+}
+
+li{
+	float: right;
+	/* makes it fall over and be inline rather than ontop */
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+
+}
+#mainNav
+{
+	float: right;
+	overflow: hidden;
+	background-color: none;
+}
+headerImage
+{
+height:200px;
+width: 960px;
+}
+
+headerImage img
+{
+	max-width: 100%;
+	max-height: 100%;
+	margin:auto;
+	display: block;
+}
+
+#siteContainer
+{
+margin: 0 auto;
+width: 960px;
+padding-left: 20px;
+padding-right: 20px;
+	background-color: #b4baba;
+}
+
+/*
+mainHeader
+{
+	float:left;
+	width:740px;
+	height:430px;
+	background-color:none;
+} */
+
+headerPro
+{
+	overflow:auto;
+	/* fixes collaps */
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+
+}
+
+headerPro p{
+	line-height: 300px;
+	padding-bottom: 40px;
+	font-size: 'Raleway', sans-serif;
+	/* look at why it doesn't work */
+}
+
+#mainCon
+{
+	margin:auto;
+	padding-top:40px;
+	margin-top: 40px;
+}
+
+
+.weddingOc
+{
+	float: left;
+margin-right: 30px;
+position: relative;
+
+
+}
+
+.gallImg
+{
+	float:left;
+	margin-left: 38px;
+position: relative;
+
+}
+	.simpleHen
+	{
+		float:left;
+	margin-right: 73px;
+	position: relative;
+	}
+
+
+	/* need to get back to these and fix them */
+
+/* end of home page */
+
+#promoInfo
+	{
+border: 10px;
+color: white;
+	}
+
+#promoInfo h1, h2
+{
+	font-size: 34px;
+font-style:'Shadows Into Light',arial, san-sarif;
+color:#333;
+line-height: 44px;
+margin-bottom: 40px;
+}
+ /* there is an issue with the first tyle not being effected */
+
+
+#promoinfo p
+{
+	font-size: 16px;
+	font-style: 'Raleway', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mainFooter
+{
+margin-top: 40px;
+margin-bottom: 40px;
+overflow: hidden;
+}
+
+#footerNav
+{
+	float: left;
+	width: 500px;
+}
+
+#copyRight
+{
+	float: right;
+	width: 310px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end of home page */
+
+
+
+
+
+
+
+
+
+/* end of about page */
+
+
+
+
+
+
+
+/* end of contact page */
