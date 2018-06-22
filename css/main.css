@@ -1,330 +1,337 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/* class "." id "#" */
+/*HTML/General Selectors*/
 
 body
 {
-	font-family: Helvetica, Arial, Sans-serif, Serif;
-	font-family: 'Raleway', sans-serif;
-	font-family: 'Shadows Into Light', cursive;
+	font-family: 'Average Sans', Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	background-color: #f6c5c0;
-	overflow: auto;
-	/* use backgroud-color here to give everything a color. */
-	/* this is the colo of the outside */
-
+	color: #333;
+	background-color: #fff;
 }
 
 p
 {
-	line-height:20px;
-	font-style: 'Raleway', sans-serif;
-
- /* all adjustments for anything with a "p" is adjusted here and it will be effected everywhere else. */
-	/* didnt have before */
+	line-height: 20px;
 }
 
+a
+{
+	text-decoration: none;
+	color: red;
+}
 
+a:hover
+{
+	color: #ccc;
+}
+
+/*Utility Classes*/
 
 .hidden
 {
 	display: none;
 }
 
-#container
-{
-	margin: 0 auto;
-	/* margin: 0 auto; makes it centered . . . 0px doesnt work */
-	width: 960px;
-	/* overflow:hidden; */
-	background-color: #c1a29b;
-	/* this is the color on the inside. or that might be the siteContainer */
+/* main page layout */
 
-}
- ul
-{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color:none;
-}
 
-li{
-	float: right;
-	/* makes it fall over and be inline rather than ontop */
-}
-li a {
+.clearfix::after{
+	content:"";
+	visibility: hidden;
 	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-
+	height:0;
+	clear:both;
 }
 
-
-#mainCon p
+.roundShadow
 {
-	background-color: white;
-	text-align: center;
-	border-radius: 0px 0px 45px 45px;
-	margin-bottom: 40px;
+	border-radius: 7px;
+	box-shadow:0px 0px 15px rgba(50,50,50,0.4);
 }
 
+#topBar
+{
+	background-color: #333;
+	height: 20px;
+}
 
-#mainNav
+#clientLogin
 {
 	float: right;
-	overflow: hidden;
-	background-color: none;
-}
-headerImage
-{
-height:200px;
-width: 960px;
+	margin-right: 20px;
+	font-size: 10px;
+	line-height: 20px;
 }
 
-headerImage img
+#topBar a
 {
-	max-width: 100%;
-	max-height: 100%;
-	margin:auto;
-	display: block;
+	color: #fff;
+}
+
+#topBar a:hover
+{
+	color: #999;
 }
 
 #siteContainer
 {
-margin: 0 auto;
-width: 960px;
-padding-left: 20px;
-padding-right: 20px;
-	background-color: #b4baba;
-}
-
-#container
-{
-	margin: 0 auto;
+	margin: 0 auto; /*center container*/
 	width: 960px;
-	padding-left: 20px;
-	padding-right: 20px;
-		background-color: #c1a29b;
 }
 
-.container
+#mainHeader
 {
-	margin: 0 auto;
-	width: 960px;
-	padding-left: 20px;
-	padding-right: 20px;
-		background-color: #b1a692;
-}
-
-
-/*
-mainHeader
-{
-	float:left;
-	width:740px;
-	height:430px;
-	background-color:none;
-} */
-
-headerPro
-{
-	overflow:auto;
-	/* fixes collaps */
-	margin-bottom: 40px;
-	padding-bottom: 40px;
-
-}
-
-headerPro p{
-	line-height: 300px;
-	padding-bottom: 40px;
-	font-size: 'Raleway', sans-serif;
-	/* look at why it doesn't work */
-}
-
-#mainCon
-{
-	margin:auto;
-	padding-top:40px;
 	margin-top: 40px;
-	padding-top: 50px;
-	overflow: auto;
-	/* needed overflow to stay in the container */
+	/*background-color: red;*/
+	border-bottom: solid 1px #DDD;
+	height: 100px; /*static content, okay to hardcode height*/
+	padding-bottom: 20px;
 }
 
-
-.weddingOc
+#logo
 {
 	float: left;
-margin-right: 30px;
-position: relative;
-border-radius: 45px 0px 0px 45px;
-
+	width: 205px;
+	margin-top: 5px;
 }
 
-.gallImg
+#logo h1
 {
-	float:left;
-	margin-left: 38px;
-position: relative;
-border-radius: 45px 0px 0px 45px;
-
+	font-size: 44px;
+	color: red;
 }
-	.simpleHen
-	{
-		float:left;
-	margin-right: 73px;
-	position: relative;
-	border-radius: 45px 0px 0px 45px;
 
-	}
-
-
-	/* need to get back to these and fix them */
-
-/* end of home page */
-
-
-
-#promoSec
+#logoStudios
 {
-border: 5px solid white;
-background-color: #c1a29b;
+	font-size: 60px;
+	color: #333;
+	letter-spacing: -1px;
+	line-height: 40px;
 }
 
-#promoInfo1, #promoinfo2
-	{
-border: 10px;
+#mainNav
+{
+	float: right;
+}
 
-	}
+#search
+{
+	float: right;
+}
 
-#promoInfo1 h1
+#search form
+{
+	margin-bottom: 20px;
+}
+
+#search input
+{
+	background: url('../images/search_white.png') no-repeat 10px 6px;
+	width: 150px;
+	padding: 6px 15px 6px 35px; /*trbl*/
+	border: 1px solid #d1d1d1;
+	border-radius: 20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.15) inset;
+}
+
+#mainNav ul
+{
+	clear: right;
+	float: right;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+#mainNav ul li
+{
+	float: left;
+}
+
+#mainNav ul li a
+{
+	display: block;
+	width: 100px;
+	background-color: red;
+	color: #fff;
+	margin-left: 20px;
+	text-align: center;
+	padding: 8px;
+	font-size: 16px;
+	border-radius: 7px;
+	background: #ff3019;
+	background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404));
+	background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%);
+	background: -o-linear-gradient(top, #ff3019 0%,#cf0404 100%);
+	background: -ms-linear-gradient(top, #ff3019 0%,#cf0404 100%);
+	background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 );
+}
+
+#mainNav ul li a:hover
+{
+	background: rgb(226,29,22);
+	background: -moz-linear-gradient(top, rgba(226,29,22,1) 0%, rgba(170,8,3,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(226,29,22,1)), color-stop(100%,rgba(170,8,3,1)));
+	background: -webkit-linear-gradient(top, rgba(226,29,22,1) 0%,rgba(170,8,3,1) 100%);
+	background: -o-linear-gradient(top, rgba(226,29,22,1) 0%,rgba(170,8,3,1) 100%);
+	background: -ms-linear-gradient(top, rgba(226,29,22,1) 0%,rgba(170,8,3,1) 100%);
+	background: linear-gradient(to bottom, rgba(226,29,22,1) 0%,rgba(170,8,3,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e21d16', endColorstr='#aa0803',GradientType=0 );
+}
+
+#companyInfo
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #ddd;
+	padding-bottom: 30px;
+	/* overflow: hidden; */
+}
+
+#companyDesc
+{
+	float: left;
+	width: 630px;
+}
+
+#promoImage
+{
+	float: right;
+	width: 305px;
+	margin-top: 10px;
+	/* transition: 0.2s ease-in; */
+}
+
+#promoImage hover
+{
+
+}
+
+#companyDesc h2
 {
 	font-size: 34px;
-font-style:'Shadows Into Light',arial, san-sarif;
-color:#333;
-line-height: 44px;
-margin-bottom: 20px;
-margin-top:30px;
- text-align: center;
+	font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+	color: #333;
+	line-height: 44px;
+	margin-bottom: 20px;
 }
- /* there is an issue with the first tyle not being effected */
 
- #promoInfo2 h1
- {
- 	font-size: 34px;
- font-style:'Shadows Into Light',arial, san-sarif;
- color:#333;
- line-height: 44px;
- margin-bottom: 20px;
- margin-top:30px;
- text-align: center;
- }
-
-
-#promoinfo1 p
+#companyDesc p
 {
 	font-size: 16px;
-	font-style: 'Raleway', sans-serif;
-
-		width: 700px;
-		 margin-left: 130px;
-		 	padding-bottom: 30px;
-			color: white;
-
-	/* is not changing to raleway for some reason. */
 }
 
-
-
-
-#promoInfo2 p
+#hire
 {
-
-		font-size: 16px;
-		font-style: 'Raleway', sans-serif;
-
-			width: 700px;
-			 margin-left: 130px;
-			 	padding-bottom: 30px;
-				color: white;
+	background-color: #666;
+	width: 200px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-top: 45px;
+	font-size: 18px;
+	border-radius: 7px;
+	transition: all .2s ease-in;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* about page starts */
-
-#hoursOf
+#hire:hover
 {
-border: 5px solid white;
-padding-top: 20px;
-background-color: #c1a29b;
+	background-color: #333;
+	border-radius: 30px;
 }
 
+/* services */
 
+#service
+{
+	margin-top:40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom:40px;
+}
+
+#service h2
+/* this is for the headers  */
+{
+	font-family: 'Fjalla One', Helvetica, Arial, Sans-serif;
+	color:#333;
+	font-size:20px;
+	/* give space for h2 */
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.serviceDesc
+{
+	float:left;
+	width:304px;
+	margin-right:24px;
+	margin-bottom:40px;
+}
+
+.serviceDescLast
+{
+	float:right;
+	width:304px;
+		margin-bottom:40px;
+}
+
+#service img
+{
+	/* -1 makes it start invisible and appear with the hover */
+opacity: 1;
+transition: opacity .24s ease-in;
+}
+
+#service img:hover
+{
+	/* -.6 makes it start invisible and appear with hover */
+	opacity:0.6;
+}
+
+/* footer */
+/*
+there is an issue witht the footer. something must be open or missing becuase
+it doesn't have the same breaks in the video example */
 
 #mainFooter
 {
-margin-top: 40px;
-margin-bottom: 40px;
-overflow: hidden;
+	margin-top:40px;
+	margin-bottom:40px;
 }
 
 #footerNav
 {
-	float: left;
-	width: 500px;
+	float:left;
+	/* floated to the left naturally but writen in
+	 so that then nav can be floated to the right. */
+	width:500px;
+	height:30px;
 }
 
-#copyRight
+#footerNav ul li
 {
-	float: right;
-	width: 310px;
+display: inline;
+/* so they are not ontop of each other anymore	 */
+font-size:12px;
+margin-right:20px;
 }
 
+#footerNav ul li a
 
+{
+	color:#666;
+	transition:all 0.3s ease-in;
+}
 
+#footerNav ul li a:hover
+{
+color:#333;
+border-bottom:solid 3px #333;
+padding-bottom:5px;
+/* believe padding bottom gives the bottom
+ line that transitions and can be used for mark */
 
-
-
-
-
-
-
-
-
-
-/* end of home page */
-
-
-
-
-
-
-
-
-
-/* end of about page */
-
-
-
-
-
-
-
-/* end of contact page */
+}

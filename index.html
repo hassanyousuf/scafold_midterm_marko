@@ -1,44 +1,112 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>home</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500%7CShadows+Into+Light" rel="stylesheet">
-    <link href="css/reset.css" rel="stylesheet" type="text/css">
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Saturated Studios</title>
+<link href="https://fonts.googleapis.com/css?family=Average+Sans%7CFjalla+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kanit%7cSource+Code+Pro" rel="stylesheet">
+<!-- must always put %7c inside to make sure validation works  -->
+<link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
+</head>
 
-    <div id="container">
-      <header id="mainHeader">
-        <nav id="navCon">
-          <h2 class="hidden">Main Navigation</h2>
-          <nav id="mainNav">
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="index.html">Home</a></li>
-            </ul>
-          </nav>
-        </nav>
-      </header>
+<body>
 
-      <section id="headerPro">
-        <section id="headerImage"><img src="images/home_header.png" alt="Main navigaiton"></section>
-    </section>
-    <!-- headerPro close -->
-    <section id="mainCon">
-        <section class="simpleHen"><img src="images/simple_henna_img.jpg" alt="standard header"><p>Simple Henna</p></section>
-        <section class="weddingOc"><img src="images/wedding_ocassion_img.jpg" alt="specail designs"><p>Special Occasions</p></section>
-        <section class="gallImg"><img src="images/gallery_img.jpg" alt="Design gallery"><p>Design Gallery</p></section>
+	<section id="topBar"> <!-- start top bar -->
+		<h2 class="hidden">Client Login Area</h2>
+		<a href="login.html" id="clientLogin">Client Login Area</a>
+	</section> <!-- end top bar -->
+
+	<main id="siteContainer">
+		<header id="mainHeader">
+			<div id="logo">
+				<h1>SATURATED
+				<span id="logoStudios">STUDIOS</span></h1>
+			</div>
+
+			<nav id="mainNav">
+				<h2 class="hidden">Main Navigation</h2>
+				<div id="search">
+					<form id="searchForm">
+						<input type="text" placeholder="Search Here">
+					</form>
+				</div>
+
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="companyInfo" class="clearfix">
+			<h2 class="hidden">Company Information</h2>
+			<section id="companyDesc">
+				<h2>We're so talented, we do our design work with our arms crossed.</h2>
+				<p>Seriously we're that talented. Let us show just how talented we are.
+					 Hire us for your next project. We promise you will not be dissapointed
+					 with the end result. Don't believe us? We offer a money-back guarantee.</p>
+				<a id="hire">HIRE US</a>
+			</section>
+			<div id="promoImage">
+				<img src="images/promo_image.jpg" alt="designer with arms crossed" width="304" height="240" class="roundShadow">
+			</div>
+		</section>
+		<section id="service">
+			<!-- h2 is always needed in a section -->
+			<h2 class="hidden">Our Services</h2>
+<section class="serviceDesc">
+	<img src="images/designer.jpg" alt="illustrator" width="304" height="180" class="roundShadow">
+	<h2>Illustration</h2>
+	<p>Or team of Illustrators can bring to life ny idea you may have. Whether it
+		 be a logo, cartoon or even a comic, we've dont it all</p>
 </section>
-<!-- maincon close -->
-      <!--
 
-      <img src="images/about_header.png" alt="about header"> -->
-      <!-- header images for other pages -->
-      </section>
+<section class="serviceDesc">
+<img src="images/pantone.jpg" alt="pantone color swatch book" height="180" width="304" class="roundShadow">
+	<!-- does not used px when type in number. -->
+<h2>colour selection</h2>
+	<p>Our designer have spent several years studying color theory. We know the key to unlocking
+	 your branding is proper color selectio. whether you relaize it or not, color is a
+	fom of cummunication. let us sent out the proper color message to your customers</p>
+</section>
 
-  <script src="js/main.js"></script>
-  </body>
+<!-- careful for spelling. mixed up missed an "s" in service and the 3 images broke -->
+
+<section class="serviceDescLast">
+	<img src="images/working_hard.jpg" alt="Female Designer looking at screen" width="304" height=" 180" class="roundShadow">
+	<h2>Expertise</h2>
+		<p>Our Web design staff is so talented, they are able to create award winning designs
+			using out dated technology. All of our monitors are circa 1990. We stil use
+			photoshop 5 andd all of our sites even work in Netscape Navigator 407</p>
+</section>
+
+</section>
+<!-- look at services area for mid term example and video 3 -->
+
+<!-- remember if containter is 960 than nothing can exceed the 960 or wont work so look at box model -->
+
+<!-- the reason that previous assingments had issues with images was because the
+total width of the images with margin and padding exceeded the container so it was pushed down so do proper calculations -->
+<footer id="mainFooter">
+	<!-- id so css can be used  -->
+	<nav id="footerNav">
+	<h2 class="hidden">footer navigation</h2>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</nav>
+<p>&copy; 2018 Saturated Studios</p>
+
+</footer>
+
+
+</main>
 </html>
